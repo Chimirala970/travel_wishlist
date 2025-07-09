@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Wishlist Planner</title>
+  <link rel="stylesheet" href="index.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- 🌍 App Header -->
+  <header class="hero-header">
+    <div class="overlay">
+   
+    <h1 class="hero-title">Travel Wishlist Planner</h1>
+    <p class="hero-subtitle">Add Destinations and see Real-Time weather updates.</p>
+  </div>
+    
+  </header>
+
+  <!-- 📝 Destination Form -->
+  <section class="form-section">
+   <form id="destination-form">
+
+  <div class="form-group">
+    <input type="text" id="city-input" placeholder="🏙️ City Name - e.g., Paris" required />
+  </div>
+
+  <div class="form-group">
+    <input type="text" id="country-input" placeholder="🌍 Country (Optional)" />
+  </div>
+
+  <div class="form-group">
+    <textarea id="note-input" placeholder="✍️ Why do you want to go?"></textarea>
+  </div>
+
+  <button type="submit">Add Destination</button>
+</form>
+
+   
+</section>
+
+  <!-- 📍 Wishlist Display Area -->
+  <section class="wishlist-section">
+    <h2 class = "wishListHeading">My Wishlist</h2>
+    <div id="wishlist-container"></div>
+  </section>
+
+  <!-- 🔔 Alert for cold places -->
+  <div id="alert-area"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
